@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+     <style>
+        .text-succes{
+            color: green;
+        }
+     </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <!-- <script type="text/javascript">
+        const root = ReactDOM.createRoot(document.getElementById("app")) -->
+    //      root.render(
+    //         React.createElement(
+    //             'h1',
+    //             {style : {color : 'blue',
+    //                 'font-family':'Verdana'}},
+    //             'belajarReact'
+    //         )
+    //     )
+
+       
+        
+    <!-- </script>  -->
+
+    <!-- <script type="text/jsx">
+        const root = ReactDOM.createRoot(document.getElementById("app"))
+
+        root.render(
+            <>
+            <h1 class="text-succes">belajar</h1>
+            <p>react</p>
+            </>
+        ) -->
+
+        <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById("app")) 
+
+        function Header(props){
+            return <h1>Belajar React</h1>
+        }
+
+        function footer(){
+            return <h6>&copy; 2024 nama</h6>
+        }
+        function HomePage() {
+            const mahasiswa = ["john", "doe", "jane"];
+            return <>
+            <header title="asik benget"/>
+            <header title=" mudah"/>
+            <p>belajar</p>
+            <u1>
+                {
+                    mahasiswa.map((mhs) => (
+                        <li key={mhs}>{mhs}</li>
+                    ))
+                }
+                </u1>
+                <footer />
+            </>;
+        }
+    root.render(<homePage/>);
+    </script>
+
+</body>
+</html>
